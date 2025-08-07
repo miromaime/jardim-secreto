@@ -1,0 +1,81 @@
+.jardim-body {
+    background-color: #f5f8f5; /* Um tom um pouco mais claro */
+}
+
+.jardim-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto; /* Espaçamento no topo e embaixo */
+    text-align: center;
+    padding: 20px;
+}
+
+.jardim-titulo {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    color: #386641;
+}
+
+.jardim-subtitulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #6a994e;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+
+/* Container que segura os cartões das trilhas */
+.trilhas-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os cartões */
+    flex-wrap: wrap; /* Permite que os cartões quebrem a linha em telas menores */
+}
+
+.trilha-card {
+
+    border-radius: 15px;
+    width: 280px; /* Aumentei um pouco a largura para a imagem caber melhor */
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+}
+
+.trilha-imagem {
+    width: 100%; 
+    display: block;
+}
+
+.trilha-texto {
+    padding: 20px; /* Adicionamos o padding aqui, para afetar apenas o texto */
+}
+
+.trilha-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.08) drop-shadow(5px 10px 15px rgba(0, 0, 0, 0.3));
+
+}
+
+.trilha-card img {
+    display: block; /* Remove qualquer espaço extra abaixo da imagem */
+    width: 100%;
+    max-width: 350px; /* Define um tamanho máximo para a porta */
+    height: auto;     /* Mantém a proporção da imagem */
+    
+}
+
+
+.trilha-card h2 {
+    font-family: 'Georgia', serif;
+    color: #386641;
+    margin-top: 0;
+}
+
+.trilha-card p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

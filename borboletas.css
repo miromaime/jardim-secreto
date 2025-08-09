@@ -129,7 +129,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Dancing Script', cursive;
     font-size: 1.8rem;
     color: rgb(201, 104, 122);
     margin-top: 0;
@@ -139,6 +138,7 @@ h2 {
 
 
 p {
+    font-family: 'Dancing Script', cursive;
     font-size: 1.8rem;
     color: #333;
     margin: 15px 0;

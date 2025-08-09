@@ -78,10 +78,25 @@ body {
 
 /* Página sendo virada */
 .page.turning {
-    transform: rotateY(-180deg);
+    transform: rotateY(-180deg) skewY(-2deg) scaleX(0.98);
     z-index: 10;
-    box-shadow: -5px 0 20px rgba(0,0,0,0.3);
-    transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.3, 1.5);
+    box-shadow: -20px 0 40px rgba(0,0,0,0.18);
+    transition: 
+        transform 1.2s cubic-bezier(0.2, 0.8, 0.3, 1.5),
+        box-shadow 1.2s;
+}
+
+.page.turning-back {
+    transform: rotateY(0deg) skewY(2deg) scaleX(0.98);
+    z-index: 10;
+    box-shadow: 20px 0 40px rgba(0,0,0,0.18);
+    transition: 
+        transform 1.2s cubic-bezier(0.2, 0.8, 0.3, 1.5),
+        box-shadow 1.2s;
+}
+
+.left-page, .right-page {
+    cursor: pointer;
 }
 
 /* Estilos do conteúdo */

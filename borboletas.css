@@ -99,6 +99,27 @@ body {
     cursor: pointer;
 }
 
+/* Evita seleção de texto ao clicar nas páginas */
+.page, .page-content, .left-page, .right-page {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Remove outline ao clicar/focar nas páginas */
+.page:focus, .left-page:focus, .right-page:focus {
+    outline: none;
+}
+
+/* Opcional: deixa a transição um pouco mais rápida e suave */
+.page.turning,
+.page.turning-back {
+    transition: 
+        transform 0.9s cubic-bezier(0.2, 0.8, 0.3, 1.5),
+        box-shadow 0.9s;
+}
+
 /* Estilos do conteúdo */
 h1 {
     font-size: 2.2rem;
